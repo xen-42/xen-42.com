@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.7",
-    "@types/bootstrap": "^5.2.6",
     "astro": "^2.2.1",
     "astro-bootstrap": "^0.5.13",
     "bootstrap": "^5.3.0-alpha3",
