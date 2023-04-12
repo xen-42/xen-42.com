@@ -1,0 +1,22 @@
+---
+const pages = [
+    ["/", "Home"],
+    ["/newhorizons/", "New Horizons"],
+    ["/asteroidarcade/", "Asteroid Arcade"],
+    ["/jams/", "Game Jam Entries"]
+]
+---
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <div id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            {pages.map(([path, title]) => (
+            <li class="nav-item">
+                <a class="nav-link" href={path}>{title}</a>
+            </li>
+            ))}
+        </div>
+      </div>
+    </div>
+  </nav>
