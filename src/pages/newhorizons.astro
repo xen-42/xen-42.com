@@ -1,11 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import YoutubeVideo from '../components/YoutubeVideo.astro';
+import BrandIcon from '../components/BrandIcon.astro';
+
+const videos = ["https://www.youtube.com/embed/xGhTDWNEqP0", "https://www.youtube.com/embed/ikljsQg9Tyc"];
 ---
 
 <Layout title="New Horizons">
 	<main>
-        <p>New Horizons is a modding framework.</p>
-        <p>Find out more <a href="https://nh.outerwildsmods.com/">here</a>.</p>
-        <p>I'll write more stuff here eventually.</p>
+
+        <div class="p-2"><img class="w-100" src="/images/medley.png"></div>
+        <p class="text-center">Image above from <a class="link-dark" href="https://outerwildsmods.com/mods/medleyofplanets/">Medley of Planets</a> by smallbug, using New Horizons</p>
+
+        <p>New Horizons is a modding framework for Outer Wilds. It's used to make planets and other custom content for the game.</p>
+        <p>Find out more <a class="link-dark" href="https://nh.outerwildsmods.com/">here</a>.</p>
+        
+        <BrandIcon class="fa-github" name="New Horizons GitHub" url="https://github.com/Outer-Wilds-New-Horizons" linkClass="link-dark" />
+
+        <br/>
+
+        {videos.map((video) => <YoutubeVideo url={video} title="Youtube" />)}
+
 	</main>
 </Layout>
