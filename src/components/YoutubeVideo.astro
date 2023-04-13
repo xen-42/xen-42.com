@@ -1,0 +1,12 @@
+---
+export interface Props {
+    url: string;
+    title: string;
+}
+
+const { url, title } = Astro.props;
+---
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe src={url} title={title} allowfullscreen></iframe>
+</div>
