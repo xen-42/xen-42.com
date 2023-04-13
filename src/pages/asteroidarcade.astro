@@ -1,14 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import YoutubeVideo from '../components/YoutubeVideo.astro';
 ---
 
 <Layout title="Asteroid Arcade">
 	<main>
+		<div class="d-flex justify-content-center">
+			<YoutubeVideo url="https://www.youtube.com/embed/SFdr_BaknVw" title="Trailer" />
+		</div>
+
         <p>I made a game.</p>
 
 		<div class="d-flex justify-content-center">
 			<iframe src="https://store.steampowered.com/widget/2329390/" frameborder="0" width="646" height="190"></iframe>
 		</div>
+
+		<br/>
 
 		<p>If you encounter any technical issues in the game please report them to me at <b>support at xen-42 dot com</b>.</p>
 	</main>
