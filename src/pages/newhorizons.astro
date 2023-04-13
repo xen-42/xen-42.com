@@ -19,13 +19,7 @@ const videos = ["https://www.youtube.com/embed/xGhTDWNEqP0", "https://www.youtub
 
         <br/>
 
-        <h4 class="text-center">New Horizons on Youtube</h4>
-
-        <div class="d-flex flex-row justify-content-center">
-                <div class="d-flex flex-column">
-                        {videos.map((video) => <YoutubeVideo url={video} title="Youtube" />)}
-                </div>
-        </div>
+        {videos.map((video) => <YoutubeVideo url={video} title="Youtube" />)}
 
 	</main>
 </Layout>
