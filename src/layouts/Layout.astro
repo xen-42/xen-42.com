@@ -19,15 +19,16 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/ico" href="/images/favicon.png"/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body class="bg-secondary d-flex flex-column min-vh-100">
-		<Header />
 
-		<div class="text-dark d-flex flex-column justify-content-center m-auto p-4" style="max-width: 720px;">
+		<div class="text-dark d-flex flex-column justify-content-center m-auto p-4 container" style="max-width: 720px;">
+			<Header />
+
 			<div class="card bg-light m-2">
 				<Navigation />
 			</div>
@@ -36,8 +37,9 @@ const { title } = Astro.props;
 				<div class="d-flex justify-content-center"><h1>{title}</h1></div>
 				<slot />
 			</div>
-		</div>
 
-		<Footer />
+			<Footer />
+
+		</div>
 	</body>
 </html>
