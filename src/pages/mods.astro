@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import YoutubeVideo from '../components/YoutubeVideo.astro';
+import BrandIcon from '../components/BrandIcon.astro';
+
+const videos = ["xGhTDWNEqP0", "ikljsQg9Tyc"];
+---
+
+<Layout title="Mods">
+<main>
+
+    <div>
+        <div class="d-flex justify-content-center text-center">
+            <a href="/newhorizons" class="link-dark">
+                <div class="p-2"><img class="w-100" src="/images/medley.png"></div>
+                <h3>New Horizons</h3>
+            </a>
+        </div>
+
+        <div class="d-flex justify-content-center text-center">
+            <p>Outer Wilds planet/content creation tool</p>
+        </div>
+    </div>
+
+    <br/>
+
+    <div>
+        <div class="d-flex justify-content-center text-center">
+            <a href="/dredge" class="link-dark">
+                <div class="p-2"><img class="w-100" src="/images/chfb.png"></div>
+                <h3>Cosmic Horror Fishing Buddies</h3>
+            </a>
+        </div>
+
+        <div class="d-flex justify-content-center text-center">
+            <p>DREDGE online mutliplayer</p>
+        </div>
+    </div>
+
+</main>
+</Layout>

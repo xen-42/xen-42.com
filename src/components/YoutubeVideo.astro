@@ -7,7 +7,34 @@ export interface Props {
 const { url, title } = Astro.props;
 ---
 
+<style>
+    .hover-opacity-100:hover
+    {
+        opacity: 1 !important;
+    }
+</style>
+
+<script>
+    const placeEmbed = function(node : Element, url : string, title : string) {
+        var embed = document.createElement("iframe");
+        node.parentElement?.appendChild(embed);
+        embed.outerHTML = '<iframe src="https://www.youtube.com/embed/' + url + '?autoplay=1" title="' + title + '" allowfullscreen allow="autoplay"></iframe>'
+    }
+
+    document.querySelectorAll("button.youtube-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+            placeEmbed(button, (button as any).dataset.url, (button as any).dataset.title);
+        })
+    })
+</script>
+
 <div class="container text-center mb-3 ratio ratio-16x9">
-    <iframe src={url} title={title} allowfullscreen></iframe>
+    <img class="w-100" src={"https://img.youtube.com/vi/" + url + "/maxresdefault.jpg"} alt={title}/>
+    <button aria-label="Play" type="button" class="btn w-100 h-100 opacity-50 hover-opacity-100 youtube-btn" style="color: red" data-url={url} data-title={title}>
+        <i class="fa-youtube fa-brands fa-4x"></i>
+    </button>
+    <noscript>
+        <a href={"https://youtu.be/" + url} target="_blank"/>
+    </noscript>
 </div>
 

@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import YoutubeVideo from '../components/YoutubeVideo.astro';
 import BrandIcon from '../components/BrandIcon.astro';
 
-const videos = ["https://www.youtube.com/embed/xGhTDWNEqP0", "https://www.youtube.com/embed/ikljsQg9Tyc"];
+const videos = ["xGhTDWNEqP0", "ikljsQg9Tyc"];
 ---
 
 <Layout title="New Horizons">
@@ -15,11 +15,13 @@ const videos = ["https://www.youtube.com/embed/xGhTDWNEqP0", "https://www.youtub
         <p>New Horizons is a modding framework for Outer Wilds. It's used to make planets and other custom content for the game.</p>
         <p>Find out more <a class="link-dark" href="https://nh.outerwildsmods.com/">here</a>.</p>
         
+        <br/>
+
         <BrandIcon class="fa-github" name="New Horizons GitHub" url="https://github.com/Outer-Wilds-New-Horizons" linkClass="link-dark" />
 
         <br/>
 
-        {videos.map((video) => <YoutubeVideo url={video} title="Youtube" />)}
+        {videos.map((video) => <YoutubeVideo url={video} title="Youtube video of New Horizons" />)}
 
 	</main>
 </Layout>
