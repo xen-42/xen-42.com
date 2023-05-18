@@ -29,7 +29,7 @@ const { url, title } = Astro.props;
 </script>
 
 <div class="container text-center mb-3 ratio ratio-16x9">
-    <img class="w-100" src={"https://img.youtube.com/vi/" + url + "/maxresdefault.jpg"} alt={title}/>
+    <img class="w-100 img-responsive" style="object-fit: cover;" src={"https://img.youtube.com/vi/" + url + "/0.jpg"} alt={title}/>
     <button aria-label="Play" type="button" class="btn w-100 h-100 opacity-50 hover-opacity-100 youtube-btn" style="color: red" data-url={url} data-title={title}>
         <i class="fa-youtube fa-brands fa-4x"></i>
     </button>
