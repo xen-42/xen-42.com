@@ -2,8 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import YoutubeVideo from '../components/YoutubeVideo.astro';
 import BrandIcon from '../components/BrandIcon.astro';
+import Article from '../components/Article.astro';
 
 const videos = ["xGhTDWNEqP0", "ikljsQg9Tyc"];
+const articles = [
+        { url : "https://whileromeburns.net/mod-it-till-it-breaks-outer-wilds-the-vision-e40a586de043", title : "Mod it ‘Till it Breaks: Outer Wilds — The Vision" },
+        { url : "https://thepixelpost.com/dossiers/outer-wilds-meilleurs-mods/", title : "Les meilleurs mods d'Outer Wilds" },
+]
 ---
 
 <Layout title="New Horizons">
@@ -21,7 +26,15 @@ const videos = ["xGhTDWNEqP0", "ikljsQg9Tyc"];
 
         <br/>
 
+        <h3 class="text-center w-100">Youtube Videos</h3>
+
         {videos.map((video) => <YoutubeVideo url={video} title="Youtube video of New Horizons" />)}
+
+        <br/>
+
+        <h3 class="text-center w-100">Articles</h3>
+        
+        {articles.map((article) => <Article url={article.url} title={article.title} />)}
 
 	</main>
 </Layout>
