@@ -6,12 +6,41 @@ import BrandIcon from '../components/BrandIcon.astro';
 const videos = ["xGhTDWNEqP0", "ikljsQg9Tyc"];
 ---
 
+<style>
+    .link-white {
+        color: white;
+    }
+    .link-white:hover {
+        color: white;
+    }
+</style>
+
 <Layout title="Mods">
 <main>
 
     <div>
+        <p>
+            I have created mods for <a href="https://www.mobiusdigitalgames.com/outer-wilds.html" class="link-dark">Outer Wilds</a> and 
+            <a href="https://www.dredge.game/" class="link-dark">Dredge</a>, two of my favourite indie games.
+        </p>
+        <p>
+            For Dredge I created a lot of the modding infrastructure including a 
+            <a href="https://dredgemods.com/" class="link-dark">mods website</a>, <a href="https://github.com/DREDGE-Mods/DredgeModDatabase" class="link-dark">mods databse</a>, and a
+            <a href="https://github.com/DREDGE-Mods/DredgeModManager" class="link-dark">mod manager</a>, all of which I've put up on an open source 
+            <a href="https://github.com/DREDGE-Mods" class="link-dark">GitHub organization</a> to facilitate collaboration.
+        </p>
+        <p>
+            For Outer Wilds I help to maintain the <a href="https://github.com/ow-mods/ow-mod-db" class="link-dark">mod database</a> and 
+            <a href="https://outerwildsmods.com/" class="link-dark">website</a>, and I help administrate the modding community Discord server.
+        </p>
+        <p>
+            Below are some of the mods I am the most proud of.
+        </p>
+    </div>
+
+    <div class="card bg-grey text-white">
         <div class="d-flex justify-content-center text-center">
-            <a href="/newhorizons" class="link-dark">
+            <a href="/newhorizons" class="link-white">
                 <div class="p-2"><img class="w-100" src="/images/medley.png"></div>
                 <h3>New Horizons</h3>
             </a>
@@ -24,9 +53,24 @@ const videos = ["xGhTDWNEqP0", "ikljsQg9Tyc"];
 
     <br/>
 
-    <div>
+    <div class="card bg-grey text-white">
         <div class="d-flex justify-content-center text-center">
-            <a href="/dredge" class="link-dark">
+            <a href="/thirdperson" class="link-white">
+                <div class="p-2"><img class="w-100" src="/images/thirdperson.png"></div>
+                <h3>Third Person Camera</h3>
+            </a>
+        </div>
+
+        <div class="d-flex justify-content-center text-center">
+            <p>Third person camera mod for Outer Wilds</p>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="card bg-grey text-white">
+        <div class="d-flex justify-content-center text-center">
+            <a href="/dredge" class="link-white">
                 <div class="p-2"><img class="w-100" src="/images/chfb.png"></div>
                 <h3>Cosmic Horror Fishing Buddies</h3>
             </a>

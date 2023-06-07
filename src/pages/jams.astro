@@ -2,28 +2,34 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
+<style>
+    iframe {
+        border: solid black 1px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+</style>
+
 <Layout title="Game Jam Entries">
 	<main>
-        <p> Game jams are fun. </p>
+        <p> When I have free time I like to participate in game james. Here are some of the entries I've made, which are all freely playable in browser on my 
+            <a href="https://xen-dev.itch.io/" class="link-dark">itch.io page</a>. </p>
 
-        <div>
-            <div class="d-flex justify-content-center"><h3>Mockbuster Video</h3></div>
+        <div class="card ps-4 pe-4 bg-grey text-white">
             <div class="d-flex justify-content-center"><iframe frameborder="0" src="https://itch.io/embed/723569?dark=true" width="552" height="167"><a href="https://xen-dev.itch.io/mockbuster-video">Mockbuster Video (Brackey's Jam 2020.2) by Xen</a></iframe></div>
-            <div><p> The theme of this jam was "rewind". The player has to sort VHS returns and sales while also keeping track of late fees and damaged tapes, and being sure that all tapes have been properly rewound after watching. Ranked 81st overall and got <b>46th place in game design</b> out of <b>1,812 entries</b>. </p></div>
+            <div><p> The theme of this jam was "rewind". The player has to sort VHS returns and sales while also keeping track of late fees and damaged tapes, and being sure that all tapes have been properly rewound after watching. Ranked 81st overall and got <b>46th place in game design</b> out of 1,812 entries. </p></div>
         </div>
 
         <br/>
 
-        <div>
-            <div class="d-flex justify-content-center"><h3>Apes Together Strong</h3></div>
+        <div class="card ps-4 pe-4 bg-grey text-white">
             <div class="d-flex justify-content-center"><iframe frameborder="0" src="https://itch.io/embed/928452?dark=true" width="552" height="167"><a href="https://xen-dev.itch.io/apes-together-strong">Apes Together Strong by Xen</a></iframe></div>
-            <div><p> The theme of this jam was "stronger together". The player can switch between controlling 3 separate characters in each level, each with different abilities needed to collect all the bananas needed to open the doors to the next level. Ranked 220th place overall and <b>83rd place in game design</b> out of <b>1,859 entries</b>. </p></div>
+            <div><p> The theme of this jam was "stronger together". The player can switch between controlling 3 separate characters in each level, each with different abilities needed to collect all the bananas needed to open the doors to the next level. Ranked 220th place overall and <b>83rd place in game design</b> out of 1,859 entries. </p></div>
         </div>
 
         <br/>
 
-        <div>
-            <div class="d-flex justify-content-center"><h3>Elementary</h3></div>
+        <div class="card ps-4 pe-4 bg-grey text-white">
             <div class="d-flex justify-content-center"><iframe frameborder="0" src="https://itch.io/embed/858448?dark=true" width="552" height="167"><a href="https://xen-dev.itch.io/elementary">Elementary by Xen</a></iframe></div>
             <div><p> The theme of this jam was "retro" with an added restriction that the game could not exceed a 96x96 pixel resolution. The player moves atoms around in a grid, and has to bind them together into the required molecules to progress to the next level. They must make use of different tiles with functions like teleporting atoms or rotating the molecules to achieve their goal. I wasn't able to submit to the jam in time due to midterms. </p></div>
         </div>
