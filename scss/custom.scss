@@ -7,6 +7,15 @@ $theme-colors: (
     "success":    #25a474,
     "warning":    #d5d025,
     "danger":     #e04113,
+    "grey":       #222222
 );
 
+.link-white {
+    color: white;
+}
+.link-white:hover {
+    color: white;
+}
+
 @import "node_modules/bootstrap/scss/bootstrap";
+

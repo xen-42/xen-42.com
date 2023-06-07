@@ -3,7 +3,8 @@ const pages = [
     ["/", "Home"],
     ["/asteroidarcade/", "Asteroid Arcade"],
     ["/mods/", "Mods"],
-    ["/jams/", "Game Jams"]
+    ["/jams/", "Game Jams"],
+    ["/prototypes/", "Projects & Prototypes"]
 ]
 ---
 
@@ -13,8 +14,8 @@ const pages = [
         <div class="navbar-nav">
             {pages.map(([path, title]) => (
             <li class="nav-item">
-                <a class="nav-link" href={path}>{title}</a>
-            </li>
+                <a class="nav-link link-dark" href={path}>{title}</a>
+            </li> 
             ))}
         </div>
       </div>

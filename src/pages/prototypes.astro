@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+import YoutubeVideo from '../components/YoutubeVideo.astro';
+import BrandIcon from '../components/BrandIcon.astro';
+
+const videos = ["lo8YwUkO9zQ", "i5HCvcbZRQw", "IJBynT3h2_I", "9zDV25fEoSc", "v7EJX38gG-E", "T5bZsQKd88s"];
+---
+
+<style>
+    .description {
+        text-align: justify;
+    }
+</style>
+
+<Layout title="Projects & Prototypes">
+	<main>
+        <div class="card bg-grey text-white p-2">
+            <span class="d-flex justify-content-center"><h5>Due By Daylight - Ubisoft Game Labs Competition</h5></span>
+
+            <YoutubeVideo url=62yEp-xKNRo title="Youtube video of Due by Daylight" />
+    
+            <p> The theme for the 2022 edition of <a class="link-white" href="https://montreal.ubisoft.com/en/our-engagements/education/game-lab-competition/">Ubisoft's Game Lab Competition</a> 
+                was "Student XP". Our submission was a two player game where two students compete to finish assignments while managing their stress levels. 
+                This was completed by a team of 8 over the course of 10 weeks, with mentorship provided by two Ubisoft employees. 
+                I was selected as the <b>team leader</b> and a programmer. My largest contribution was the code required for online multiplayer through Steam.
+            </p>
+    
+            <br/>
+    
+            <BrandIcon class="fa-github" name="Due by Daylight GitHub" url="https://github.com/xen-42/mcgill-ugl-2022" linkClass="link-white" />
+        </div>
+
+
+        <br/>
+
+        <span class="d-flex justify-content-center"><h5>Godot Projects</h5></span>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm p-2 m-2 card bg-grey text-white d-flex flex-column">
+                    <div class="d-flex justify-content-center"><h3>Waves and bouyancy</h3></div>
+					<img src="/images/waves.gif" class="w-100"/>
+                    <p class="description"> 
+                        I simulated <a class="link-white" href="https://en.wikipedia.org/wiki/Trochoidal_wave">Trochoidal waves</a> using vertex shaders to make the graphical effect. 
+                        To simulate bouyancy, I calculate the wave height at predetermined points on any bouyant object and use the depth to determine the force to apply.
+                    </p>
+                    <br/>
+                    <div class="flex-fill"></div>
+                    <BrandIcon class="fa-github" name="GitHub" url="https://github.com/xen-42/godot-waves-buoyancy" linkClass="link-white" />
+                </div>
+                <div class="col-sm p-2 m-2 card bg-grey text-white d-flex flex-column">
+					<div class="d-flex justify-content-center"><h3>Portal gun</h3></div>
+					<img src="/images/portal.gif" class="w-100"/>
+					<p> I recreated the portal gun from Portal using teleportation and camera trickery. </p>
+                    <br/>
+                    <div class="flex-fill"></div>
+                    <BrandIcon class="fa-github" name="GitHub" url="https://github.com/xen-42/godot-waves-buoyancy" linkClass="link-white" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm p-2 m-2 card bg-grey text-white d-flex flex-column">
+                    <div class="d-flex justify-content-center"><h3>Voxel terrain</h3></div>
+					<img src="/images/voxels.gif" class="w-100"/>
+                    <p class="description"> 
+                        I made voxel terrain from scratch, and used it to create different procedurally generated environments. 
+                        I populated one of these environments with flying creatures that flock using the <a href="http://www.red3d.com/cwr/boids/">Boids</a> algorithm, 
+                        and flap their wings using vertex shaders.
+                    </p>
+                    <br/>
+                    <div class="flex-fill"></div>
+                    <BrandIcon class="fa-github" name="GitHub" url="https://github.com/xen-42/godot-waves-buoyancy" linkClass="link-white" />
+                </div>
+                <div class="col-sm p-2 m-2 card bg-grey text-white d-flex flex-column">
+					<div class="d-flex justify-content-center"><h3>PyTorch in Godot</h3></div>
+					<img src="/images/ai.gif" class="w-100"/>
+					<p> I used <a href="https://godotengine.org/asset-library/asset/179">PythonScript</a> to incorporate PyTorch into Godot, 
+                        and used it to create and train a neural network in playing a simple game of snake.
+                    </p>
+                    <br/>
+                    <div class="flex-fill"></div>
+                    <BrandIcon class="fa-github" name="GitHub" url="https://github.com/xen-42/godot-waves-buoyancy" linkClass="link-white" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm p-2 m-2 card bg-grey text-white d-flex flex-column">
+                    <div class="d-flex justify-content-center"><h3>Procedural planets</h3></div>
+					<img src="/images/planets.gif" class="w-100"/>
+                    <p class="description"> 
+                        I created 3D icosphere meshes and used random noise to set their terrain structure, then added gravitational forces to put them in orbit.
+                    </p>
+                    <br/>
+                    <div class="flex-fill"></div>
+                    <BrandIcon class="fa-github" name="GitHub" url="https://github.com/xen-42/godot-waves-buoyancy" linkClass="link-white" />
+                </div>
+                <div class="col-sm p-2 m-2 card bg-grey text-white d-flex flex-column">
+					<div class="d-flex justify-content-center"><h3>Game of Life</h3></div>
+					<img src="/images/conways.gif" class="w-100"/>
+					<p> 
+                        I made Conway's Game of Life with vertical and horizontal wrapping. Then I wrote a raymarching shader to project it onto a torus.
+                    </p>
+                    <br/>
+                    <div class="flex-fill"></div>
+                    <BrandIcon class="fa-github" name="GitHub" url="https://github.com/xen-42/godot-waves-buoyancy" linkClass="link-white" />
+                </div>
+            </div>
+        </div>
+
+        I documented my development of these projects on my Youtube channel, the videos are linked below.
+
+        <h3 class="text-center w-100">Youtube Videos</h3>
+
+        {videos.map((video) => <YoutubeVideo url={video} title="Youtube video of New Horizons" />)}
+
+        <br/>
+
+	</main>
+</Layout>

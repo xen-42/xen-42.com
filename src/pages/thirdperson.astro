@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import YoutubeVideo from '../components/YoutubeVideo.astro';
+import BrandIcon from '../components/BrandIcon.astro';
+import Article from '../components/Article.astro';
+
+const videos = ["l5_jIIJHZz0", "cKTY5joRdL8"];
+---
+
+<Layout title="Third Person Camera">
+	<main>
+
+        <div class="p-2"><img class="w-100" src="/images/outerwilds.png" alt="Screenshot of the Third Person Camera mod"></div>
+
+        <p>Outer Wilds is played from a first person perspective. 
+        However a main mechanic of the game is a scout probe the player can launch to take pictures, meaning the player character is fully modeled and animated.
+        This gave me the oppurtunity to make a simple <a class="link-dark" href="https://outerwildsmods.com/mods/thirdpersoncamera/">third person mod</a> allowing the player to be seen.</p>
+
+        <div class="p-2"><img class="w-100" src="/images/staticcamera1.png" alt="Screenshot of the Static Camera mod"></div>
+
+        <p>
+            While creating this mod I made several improvements to the players appearance from a third person perspective including animating the head to face the correct up/down direction,
+            and making held items render correctly instead of only showing the first person view model. This led me to create a separate 
+            <a class="link-dark" href="https://github.com/xen-42/ow-common-camera-util">Common Camera Utility</a> mod which was used to improve the appearance of the 
+            <a class="link-dark" href="https://outerwildsmods.com/mods/freecam/">Freecam</a> and 
+            <a class="link-dark" href="https://outerwildsmods.com/mods/staticcamera/">Static Camera</a> mods.
+        </p>
+        
+        <br/>
+
+        <BrandIcon class="fa-github" name="Third Person Camera GitHub" url="https://github.com/xen-42/outer-wilds-third-person-camera" linkClass="link-dark" />
+
+        <br/>
+
+        <h3 class="text-center w-100">Youtube Videos</h3>
+
+        {videos.map((video) => <YoutubeVideo url={video} title="Youtube video of the Third Person Camera mod" />)}
+
+        <br/>
+
+	</main>
+</Layout>
