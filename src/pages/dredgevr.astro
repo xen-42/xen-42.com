@@ -2,20 +2,34 @@
 import Layout from '../layouts/Layout.astro';
 import YoutubeVideo from '../components/YoutubeVideo.astro';
 import BrandIcon from '../components/BrandIcon.astro';
+
+const videos = ["xEsdQGA4uNw", "Q3L0AlWFFOo", "hvjqjAjj7go"];
 ---
 
 <Layout title="Dredge VR">
 	<main>
 
-		<div class="d-flex justify-content-center embed-responsive">
-			<YoutubeVideo url="bW2hzQDZPi0" title="Dredge VR Gameplay on Youtube" />
-		</div>
+        <div class="p-2"><img class="w-100" src="/images/dredge-vr-banner.png" alt="DREDGE VR banner image"></div>
 
-        <p>A WIP VR mod for DREDGE. Currently it is only available in early access on my <a class="link-dark" href="https://www.patreon.com/xen42">Patreon</a>.</p>
+        <p>A WIP VR mod for <b>DREDGE</b>. Currently it is only available in early access on my <a class="link-dark" href="https://www.patreon.com/xen42">Patreon</a>.</p>
 
 		<div class="d-flex justify-content-center embed-responsive">
 			<YoutubeVideo url="00tAQ_7i1To" title="Dredge VR Devlog on Youtube" />
 		</div>
+		<p class="text-center">Watch my first VR devlog on Youtube above.</p>
+
+		<div class="d-flex justify-content-center embed-responsive">
+			<YoutubeVideo url="bW2hzQDZPi0" title="Dredge VR Gameplay on Youtube" />
+		</div>
+		<p class="text-center">Short gameplay video.</p>
+
+		</br>
+
+        <h3 class="text-center w-100">Youtubers Trying DREDGE VR</h3>
+
+        {videos.map((video) => <YoutubeVideo url={video} title="Youtube video of DREDGE VR" />)}
+
+        <br/>
 
 	</main>
 </Layout>
