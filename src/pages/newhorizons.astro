@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import YoutubeVideo from '../components/YoutubeVideo.astro';
 import BrandIcon from '../components/BrandIcon.astro';
 import Article from '../components/Article.astro';
+import Title from '../components/Title.astro';
 
 const videos = ["xGhTDWNEqP0", "ikljsQg9Tyc"];
 const articles = [
@@ -47,14 +48,14 @@ const articles = [
         <BrandIcon class="fa-github" name="New Horizons GitHub" url="https://github.com/Outer-Wilds-New-Horizons" linkClass="link-dark" />
 
         <br/>
-
-        <h3 class="text-center w-100">Youtube Videos</h3>
+        
+        <Title title="Youtube videos featuring New Horizons"></Title>
 
         {videos.map((video) => <YoutubeVideo url={video} title="Youtube video of New Horizons" />)}
 
         <br/>
 
-        <h3 class="text-center w-100">Articles featuring New Horizons mods</h3>
+        <Title title="Articles featuring New Horizons"></Title>
         
         {articles.map((article) => <Article url={article.url} title={article.title} />)}
 

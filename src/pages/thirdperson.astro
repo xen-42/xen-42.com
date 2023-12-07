@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import YoutubeVideo from '../components/YoutubeVideo.astro';
 import BrandIcon from '../components/BrandIcon.astro';
 import Article from '../components/Article.astro';
+import Title from '../components/Title.astro';
 
 const videos = ["l5_jIIJHZz0", "cKTY5joRdL8"];
 ---
@@ -32,7 +33,7 @@ const videos = ["l5_jIIJHZz0", "cKTY5joRdL8"];
 
         <br/>
 
-        <h3 class="text-center w-100">Youtube Videos</h3>
+        <Title title="Youtube Videos"></Title>
 
         {videos.map((video) => <YoutubeVideo url={video} title="Youtube video of the Third Person Camera mod" />)}
 

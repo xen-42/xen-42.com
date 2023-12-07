@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import YoutubeVideo from '../components/YoutubeVideo.astro';
 import BrandIcon from '../components/BrandIcon.astro';
+import Title from '../components/Title.astro';
 
 const videos = ["Qbfqu-Y7toE", "xEsdQGA4uNw", "Q3L0AlWFFOo"];
 ---
@@ -11,28 +12,37 @@ const videos = ["Qbfqu-Y7toE", "xEsdQGA4uNw", "Q3L0AlWFFOo"];
 
         <div class="p-2"><img class="w-100" src="/images/dredge-vr-banner.png" alt="DREDGE VR banner image"></div>
 
-		Nothing to see here, for now.
+        <p>A WIP VR mod for <b>DREDGE</b>. It can be installed using the mod manager from the <a class="link-dark" href="https://dredgemods.com/">DREDGE mods website</a>.</p>
 
-		<!--
-        <p>A WIP VR mod for <b>DREDGE</b>. Currently it is only available in early access on my <a class="link-dark" href="https://www.patreon.com/xen42">Patreon</a>.</p>
-
-		<div class="d-flex justify-content-center embed-responsive">
-			<YoutubeVideo url="00tAQ_7i1To" title="Dredge VR Devlog on Youtube" />
+		
+		<div class="card p-2 pb-0 mb-4 bg-grey text-white">
+			<div class="d-flex justify-content-center embed-responsive">
+				<YoutubeVideo url="00tAQ_7i1To" title="Dredge VR Devlog on Youtube" />
+			</div>
+			<p class="text-center">Watch my first VR devlog on Youtube above.</p>
 		</div>
-		<p class="text-center">Watch my first VR devlog on Youtube above.</p>
 
-		<div class="d-flex justify-content-center embed-responsive">
-			<YoutubeVideo url="bW2hzQDZPi0" title="Dredge VR Gameplay on Youtube" />
+		<div class="card p-2 pb-0 mb-4 bg-grey text-white">
+			<div class="d-flex justify-content-center embed-responsive">
+				<YoutubeVideo url="bW2hzQDZPi0" title="Dredge VR Gameplay on Youtube" />
+			</div>
+			<p class="text-center">Watch a short VR gameplay video.</p>
 		</div>
-		<p class="text-center">Short gameplay video.</p>
+
+		The mod is <b>open source</b> and can be found on my GitHub. 
+
+		<br/>
+		<br/>
+		<br/>
+
+		<BrandIcon class="fa-github" name="DREDGE VR GitHub" url="https://github.com/xen-42/dredgevr" linkClass="link-dark" />
 
 		</br>
 
-        <h3 class="text-center w-100">Youtubers Trying DREDGE VR</h3>
+        <Title title="Youtubers trying DREDGE VR"></Title>
 
         {videos.map((video) => <YoutubeVideo url={video} title="Youtube video of DREDGE VR" />)}
 
         <br/>
-		-->
 	</main>
 </Layout>
